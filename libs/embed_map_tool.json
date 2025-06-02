@@ -4,17 +4,17 @@
   "parameters": {
     "type": "object",
     "properties": {
-      "place": {
+      "query": {
         "type": "string",
         "description": "Nama tempat, misalnya 'ramen near Bandung'"
       }
     },
-    "required": ["place"]
+    "required": ["query"]
   },
   "api": {
-    "url": "http://localhost:5000/embed-map",
+    "url": "http://localhost:5000/search-place",
     "method": "GET",
     "response_format": "json",
-    "place_param_name": "place"
+    "query_param_name": "query"
   }
 }
